@@ -152,7 +152,7 @@ footer {
     z-index: 1000;   
 }
 
-/* Estilo de los botones */
+
 .btn-inferior {
     background-color: #1b5e20; 
     color: white;
@@ -165,9 +165,176 @@ footer {
     transition: 0.3s ease;
 }
 
-/* Efecto al pasar el mouse */
 .btn-inferior:hover {
     background-color: #2e7d32;
     transform: scale(1.1);   
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+#main-header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-superior {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.btn-nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-nav:hover {
+    background-color: white;
+    color: #2e7d32;
+}
+
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content { display: block; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+#main-header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu-superior {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.btn-nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: white;
+    color: #2e7d32;
+}
+
+/* DROPDOWN */
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover { background-color: #f1f1f1; }
+.dropdown:hover .dropdown-content { display: block; }
+.contenedor-texto, .seccion-gris, .seccion-formulario {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.seccion-gris { background-color: #f4f4f4; border-radius: 10px; margin-bottom: 20px; }
+
+.formulario-eco {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.campo { display: flex; flex-direction: column; gap: 5px; }
+.campo input, .campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    padding: 12px 20px;
+    background-color: #1b5e20;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.izq { left: 20px; }
+.der { right: 20px; }

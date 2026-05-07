@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMundo | Inicio</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+</head>
+<body>
+
+    <nav class="menu-superior">
+        <a href="index.html" class="btn-nav">Inicio</a>
+        <div class="dropdown">
+            <button class="btn-nav">Menú Principal ▼</button>
+            <div class="dropdown-content">
+                <a href="#servicios">Nuestros Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="main-header">
+        <h1>EcoMundo</h1>
+        <p>Soluciones sostenibles para tu hogar</p>
+    </header>
+
+    <main>
+        <section class="contenedor-texto">
+            <h2>EcoMundo</h2>
+            <p>Bienvenido a nuestra página ecológica. Promovemos el cuidado del medio ambiente mediante acciones responsables como el reciclaje, el ahorro de recursos y la reducción de la contaminación, con el fin de construir un planeta más limpio y sostenible.</p>
+        </section>
+
+        <section id="servicios" class="seccion-gris">
+            <h2>Nuestros Servicios</h2>
+            <div class="tarjeta-servicio">
+                <h3>Paneles Solares</h3>
+                <p>Ofrecemos instalación de paneles solares de alta eficiencia para tu hogar y mantenimiento.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-formulario">
+            <h2>Contáctanos</h2>
+            <form action="index.html" method="get" class="formulario-eco">
+                <div class="campo">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label>Correo Electrónico</label>
+                    <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="campo">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="300 123 4567" required>
+                </div>
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
